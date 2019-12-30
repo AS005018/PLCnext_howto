@@ -94,6 +94,9 @@ chmod +x ./pxc-glibc-x86_64-axcf2152-image-sdk-cortexa9t2hf-neon-toolchain-2019.
 
 ## 4. Configure Eclipse® IDE to use the installed PLCnext SDK ##
 
+//You must ensure that the path you enter is correct.
+//instead of 2019.3 you have to write your program version number
+
 Set project cross settings (prefix and path):
 
 >arm-pxc-linux-gnueabi-  
@@ -124,3 +127,8 @@ Set project cross G++ Linker flags:
 >--sysroot=/opt/pxc/sdk/AXCF2152/2019.3/sysroots/cortexa9t2hf-neon-pxc-linux-gnueabi -march=armv7-a -mthumb -mfpu=neon -mfloat-abi=hard -mcpu=cortex-a9 -Wl,--no-undefined
 
 ![SDK ok](images/cdt_cross_linker_settings.png)
+
+
+//you must install the make component, for this go to the terminal and enter 
+//sudo apt install make 
+//and follow the onscreen instructions
